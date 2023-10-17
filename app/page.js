@@ -103,33 +103,6 @@ export default function Home() {
     setLoadingAction(false)
   }
 
-  const stocks = [
-    {
-      id: 1,
-      name: "Product A",
-      category: "Category A",
-      description: "Description for Product A",
-      quantity: 10,
-      price: 20,
-    },
-    {
-      id: 2,
-      name: "Product B",
-      category: "Category B",
-      description: "Description for Product B",
-      quantity: 15,
-      price: 30,
-    },
-    {
-      id: 3,
-      name: "Product C",
-      category: "Category C",
-      description: "Description for Product C",
-      quantity: 5,
-      price: 15,
-    },
-  ];
-
   const productCategories = ["Category A", "Category B", "Category C", "Other"];
 
   return (
@@ -265,7 +238,7 @@ export default function Home() {
           </button>
         </form>
 
-        <table className="table-auto mx-auto my-auto">
+        <table className="table-auto mx-auto my-auto sm:table-row-group">
           <thead>
             <tr>
               <th className="px-8 py-4">ID</th>
